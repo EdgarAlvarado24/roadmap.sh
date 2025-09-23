@@ -1,59 +1,79 @@
 *{
     margin: 0;
     padding: 0;
-    color: black;
+    /* color: black; */
 }
 
 .datepicker-container{
     box-sizing: border-box;
-    width: 500px;
+    width: 200px;
 }
 
-.datepicker-top{
+.datepicker-header{
     display: flex;
-    justify-content: center;
     box-sizing: border-box;
-    width: 100%;
+    width: 200px;
+    border: 1px solid black;
 }
 
-.datepicker-top > *{
+.datepicker-header > *{
     display: flex;
     padding: 10px;
     border: 1px solid black;
     background-color: white;
 }
 
-.datepicker-top p{
+.datepicker-header input{
     width: 100%;
 }
 
 .datepicker-body{
-    display: flex;
-    justify-content: center;
+    box-sizing: border-box;
+    width: 200px;
+    border: 2px solid black;
 }
 
 .datepicker-date{
     display: flex;
-    justify-content: center;
     width: 100%;
-    border: 1px solid;
+    justify-content: center;
+    
 }
 
-
-.date::before{
-    content: "";
-    left: 150px;
-    position: absolute;
-    border-right: 15px solid black;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;   
+.date{
+    align-content: center;
+    font-size: 13.5px;
 }
 
-.date::after{
-    content: "";
-    left: 350px;
-    position: absolute;
-    border-left: 15px solid black;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+.arrow-left, .arrow-right{
+    border: 0 none transparent;
+    background-color: white;
+    padding: 5px 20px;
+    cursor: pointer;
 }
+
+.datepicker-days{
+    display: flex;
+    justify-content: center;
+}
+
+.datepicker-days > p{
+    padding: 5px 10px;
+}
+
+.datepicker-calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.datepicker-numbers{
+    border: 1px solid black;
+}
+
+.datepicker-calendar > *{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
