@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.form-iu{
+    display: grid;
+    box-sizing: border-box;
+    width: 600px;
+    grid-template-columns: repeat(2, 300px 300px);
+    margin: 5%;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.form-iu > *{
+    margin: 20px;
+}
+
+.container-form > *{
+    margin: 15px;
+}
+
+.container-form .parragrphs > *{
+    margin: 5px;
+}
+
+.form-input{
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.update-button{
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.container-circle{
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    border: 4px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    transform: rotate(45);
+}
+
+.loading{
+    font-size: 35px;
+}
+
+.container-tasks > *{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.tasks-title{
+    margin: 25px 0px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.tasks-list{
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    border-radius: 30px;
+    width: 200px;
+    height: 220px;
+}
+
+.tasks-list > p{
+    margin: 10px 0px;
+}
+
+.line{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.password-container{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(90);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
