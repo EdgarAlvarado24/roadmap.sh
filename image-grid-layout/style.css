@@ -1,0 +1,11 @@
+.contianer-columns{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.column-grid{
+}
+
+img{
+    width: 20%;
+}
