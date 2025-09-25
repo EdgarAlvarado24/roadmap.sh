@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    margin: auto;
+    /* position: relative; */
+}
+
+ul{
+    display: flex;
+    /* position: relative; */
+    list-style: none;
+}
+
+li{
+    display: flex;
+    /* height: 100px; */
+    align-content: end;
+    padding: 20px;
+
+    /* position: absolute; */
+}
+
+
+li:hover{
+    content:"";
+    /* position: absolute; */
+    height: 100px;
+    /* top:10%; */
+    border-radius: 20px;
+    background-color: yellow;  
+    
+}
