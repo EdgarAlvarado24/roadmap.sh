@@ -13,3 +13,6 @@ https://roadmap.sh/projects/datepicker-ui
 <br>
 #accessibility-form-iu
 https://roadmap.sh/projects/accessible-form-ui
+<br>
+#image-grid-layout
+https://roadmap.sh/projects/image-grid
