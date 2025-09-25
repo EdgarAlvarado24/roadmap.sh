@@ -1,11 +1,41 @@
-.contianer-columns{
-    display:grid;
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-columns{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    box-sizing: border-box;
 }
 
 .column-grid{
+    display: grid;
+    gap: 1%;
 }
 
 img{
-    width: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .container-columns{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .column-grid{
+        display: grid;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    
 }
