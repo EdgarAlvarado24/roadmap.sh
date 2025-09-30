@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" ></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-tabs">
+        <div class="container-list">
+            <ul class="list">
+                <li id="first-tab" class="active" onclick="pressButton(event)">First Tab</li>
+                <li id="second-tab" class="inactive" onclick="pressButton(event)">Second Tab</li>
+                <li id="third-tab" class="inactive" onclick="pressButton(event)">Third Tab</li>
+                <li id="fourth-tab"  class="inactive" onclick="pressButton(event)">Fourth Tab</li>
+            </ul>
+        </div>
+        <p class="paragraph">
+            Clicking each tab should hide the content of the other tab and show the content of clicked tab. By default, enable first tab.
+        </p>
+        <div class="container-text">
+            <p class="first-tab">
+                First Tab context to be displayed here.
+            </p>
+        </div>
+        <p class="paragraph">
+            Add some dummy content or just add a simple text showing the tab
+        </p>
+    </div>
+</body>
+</html>

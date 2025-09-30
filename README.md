@@ -16,3 +16,6 @@ https://roadmap.sh/projects/accessible-form-ui
 <br>
 #image-grid-layout
 https://roadmap.sh/projects/image-grid
+<br>
+#tabs
+https://roadmap.sh/projects/simple-tabs
