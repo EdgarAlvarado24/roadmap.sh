@@ -22,3 +22,6 @@ https://roadmap.sh/projects/tooltip-ui
 <br>
 #tabs
 https://roadmap.sh/projects/simple-tabs
+<br>
+#cookie-consent
+https://roadmap.sh/projects/cookie-consent
