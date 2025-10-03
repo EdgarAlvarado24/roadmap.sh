@@ -25,3 +25,6 @@ https://roadmap.sh/projects/simple-tabs
 <br>
 #cookie-consent
 https://roadmap.sh/projects/cookie-consent
+<br>
+#restricted-textarea
+https://roadmap.sh/projects/restricted-textarea
