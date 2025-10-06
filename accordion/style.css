@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    max-width: 800px;
+    margin: auto;
+}
+
+.container-main{
+    margin: 5%;
+    padding: 5% 10%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.accordion > *{
+    margin: 10px 0px;
+}
+
+.accordion-title{
+    border: 2px solid black;
+    padding: 14px 20px;
+    border-radius: 10px;
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow{
+    font-size:  12px;
+    cursor: pointer;
+}
+
+/* 
+.accordion-title::after{
+    content: "V";
+    position: absolute;
+    left: 95%;
+    top: 10%;
+    // transform: translateY(-60%); 
+    border-top: 10px solid transparent;
+    font-size: 12px;
+    cursor: pointer;
+} 
+
+*/
+
+.accordion-response{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
