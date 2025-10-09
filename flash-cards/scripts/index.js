@@ -9,4 +9,6 @@ let questions = [
     },
 ]
 
+console.log('hola');
+
 export default questions;

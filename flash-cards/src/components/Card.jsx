@@ -1,4 +1,8 @@
-function Card(){
+import { useState } from 'react';
+
+function Card({ question }){
+    const [showAnswer, setShowAnswer] = useState(false);
+
     return(
         <>
             <div className='container-flash-cards'>
@@ -12,14 +16,12 @@ function Card(){
                 <div className='body-card'>
                     <div className='background-body'>
                         <p className='body-question'>
-                        What is the
-                        difference between
-                        var, let, and const?
+                        {showAnswer ? question.ansquer : question.question}
                         </p>
                     </div>
                     <div className='options-buttons'>
                         <button className='border-left'> <i className='bi bi-arrow'></i> Previous </button>
-                        <button>Show Answer</button>
+                        <button onClick={() => setShowAnswer(!showAnswer)}>{showAnswer ? "Hide Answer" : "Show Answer"}</button>
                         <button className='border-right'> Next  <i className='bi bi-arrow'></i> </button>
                     </div>
                 </div>
