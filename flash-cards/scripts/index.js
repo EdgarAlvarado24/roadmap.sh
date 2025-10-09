@@ -7,8 +7,14 @@ let questions = [
         question:"What is OOP?",
         ansquer:"OOP is Object-Oriented Programming" 
     },
+    {
+        question:"What is Javascript?",
+        ansquer:"Javascript is a programming lenguaje" 
+    },
+    {
+        question:"What is Python?",
+        ansquer:"Python is a programming lenguaje" 
+    }
 ]
-
-console.log('hola');
 
 export default questions;

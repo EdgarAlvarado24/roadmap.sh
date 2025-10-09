@@ -4,12 +4,11 @@ import questions from '../scripts/index'
 import './App.css'
 
 function App() {
-  const [questionIndex, setQuestionIndex] = useState(0);
 
   return (
     <>
       <div className='main-container'>
-        <Card question={questions[questionIndex]} />
+        <Card questions={questions} />
       </div>
     </>
   )
