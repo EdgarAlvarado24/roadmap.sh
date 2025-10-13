@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import Card from './components/card'
-import '../scritps/index'
+import Card from './components/Card'
+import questions from '../scripts/index'
 import './App.css'
 
 function App() {
+
   return (
     <>
       <div className='main-container'>
-        <Card/>
+        <Card questions={questions} />
       </div>
     </>
   )
