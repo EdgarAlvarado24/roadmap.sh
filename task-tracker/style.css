@@ -1,0 +1,107 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    align-items: center;
+    justify-items: center;
+    padding: 5% 20%;
+    margin: 5%;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 700px;
+}
+
+.container-task{
+    box-sizing: border-box;
+    width: 550px;
+}
+
+.container-task > *{
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 550px;
+}
+
+.Title{
+    font-size: 20px;
+}
+
+.container-create-task{
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 95%;
+    height: 50px;
+    align-content: center;
+    margin: 1px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.create-task{
+    border: none;
+    width: 90%;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.create-task:focus{
+    outline: none;
+}
+
+.create-task::placeholder{
+    opacity: 0.3;
+}
+
+.button-create-task{
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 100%;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-list-task{
+    display: flex;
+    margin: 20px 0px;
+    padding: 10px 0px; 
+    border-bottom: 1px solid gray;
+    position: relative
+}
+
+.container-list-task > *{
+    padding-left: 10px;
+}
+
+.container-list-task > p{
+    font-size: 18px;
+}
+
+.grown-checkbox{
+    width: 20px;
+}
+
+.grown-checkbox:checked{
+    background-color: gray;
+    color: red;
+}
+
+.delete-button{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
