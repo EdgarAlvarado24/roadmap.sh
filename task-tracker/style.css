@@ -95,13 +95,31 @@ body{
     width: 20px;
 }
 
-.grown-checkbox:checked{
+.grown-checkbox{
     background-color: gray;
     color: red;
+}
+
+.container-list-task input:checked ~ .grown-checkbox::after{
+    content: none;
+    background-color: gray;
+}
+.grown-checkbox:checked{
+    content: none;
+    background-color: gray;
+}
+
+input[type="checkbox"]{
+    color: red;
+    background-color: red;
 }
 
 .delete-button{
     position: absolute;
     right: 20px;
     cursor: pointer;
+}
+
+.completed-task{
+    text-decoration: line-through;
 }
