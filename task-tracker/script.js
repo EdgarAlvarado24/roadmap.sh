@@ -50,10 +50,9 @@ buttonCreateTask.addEventListener("click",()=>{
         },
     }
 
-    Array(listTask).push(newTask)
+    taskList.push(newTask)
     createContainerListTask(newTask)
 })
-
 
 function createContainerListTask(task){
     let containerListTask = document.createElement('div')
@@ -72,34 +71,23 @@ function createContainerListTask(task){
         newTask.classList.add('completed-task');
         newCheckbox.setAttribute('checked','checked')
     }
-    // console.log(inputCreateTask.value)
+
+    // <-- echo con ia -->
+    newIcon.addEventListener("click", () => {
+        containerListTask.remove();
+        // Opcional: también puedes eliminarlo del array 'taskList' si lo necesitas
+    });
+     // <-- echo con ia -->
+    newCheckbox.addEventListener("click", () => {
+        newTask.classList.toggle('completed-task');
+        task.status.completed = !task.status.completed;
+        // Opcional: puedes mover el elemento al final de la lista si está completado
+    });
+     // <-- echo con ia -->
+
     containerListTask.appendChild(newCheckbox);
     containerListTask.appendChild(newTask);
     containerListTask.appendChild(newIcon);
 
     containerList.appendChild(containerListTask);
-}
-
-
-listTask = containerList.children;
-
-for(let i = 0; i <= listTask.length - 1; i++){
-    listTask[i].lastChild.addEventListener("click", (event)=>{
-    // remover este elemento de la lista 
-    containerList.removeChild(listTask[i])
-   })
-}
-
-for(let i = 0; i <= listTask.length - 1; i++){
-    listTask[i].firstChild.addEventListener("click", (event =>{
-        taskText = listTask[i].children[1]
-        if(!taskText.classList.contains('completed-task')){
-            taskText.classList.add('completed-task')
-            console.log(listTask[i])
-            // taskList[i].firstChild.setAttribute('checked','checked')
-        }else{
-            taskText.classList.remove('completed-task')
-        }
-        // console.log(taskText)
-    }))
 }
