@@ -1,7 +1,5 @@
 import { Octokit } from "https://esm.sh/@octokit/core";
 
-//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
-
 document.addEventListener('DOMContentLoaded', ()=>{
 
     let selectLanguage = document.getElementById('selectLanguage');
