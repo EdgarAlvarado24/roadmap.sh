@@ -94,6 +94,26 @@
     padding: 2px 0px 2px 0px;
 }
 
+.button-error{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(219, 14, 14);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 2px 0px 2px 0px;
+}
+
+.container-repo-error{
+    width: 90%;
+    height: 100%;
+    justify-items: center;
+    padding: 5%;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: rgb(253, 152, 152);
+}
+
 @media (max-width: 768px) {
 
     .container{

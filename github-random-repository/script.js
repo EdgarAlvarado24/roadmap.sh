@@ -1,6 +1,5 @@
 import { Octokit } from "https://esm.sh/@octokit/core";
 
-
 document.addEventListener('DOMContentLoaded', ()=>{
 
     let selectLanguage = document.getElementById('selectLanguage');
@@ -33,6 +32,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     displayRepo(null);
                     return;
                 }
+                // throw Error
 
                 let maxResults = Math.min(totalCount,1000);
                 let randomPage = Math.floor(Math.random() * maxResults) + 1;
@@ -47,21 +47,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
                 let repoFounded = randomRepoResult.data.items[0];
                 displayRepo(repoFounded)
+                
 
-                // var url = `https://api.github.com/search/repositories?q=${language}`;
-
-                // fetch(url, {
-                //     method: "GET", 
-                //     headers: {
-                //         "Content-Type": "application/json",
-                //     },
-                // })
-                // .then((res) => res.json())
-                // .catch((error) => console.error("Error:", error))
-                // .then((response) => console.log("Success:",response))
             }catch(error){
                 console.error("Error al buscar el repositorio", error)
+                repoContainer.classList.remove('container-repo');
+                repoContainer.classList.add('container-repo-error');
                 repoContainer.innerHTML = `<p>Error fetching repositories</p>`
+                if(buttonContainer.childElementCount === 0){
+                    creteRefreshButton('error')
+                }
             }
             
         }
@@ -80,13 +75,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 <i class="bi bi-info-circle"><span>${repo.watchers}</span></i>
             </div>
             `;
-            creteRefreshButton()
+
+            if(buttonContainer.childElementCount === 0){
+                creteRefreshButton()
+            }
         }
 
-        function creteRefreshButton(){
+        function creteRefreshButton(type='refresh'){
+            
             let buttonRefresh = document.createElement('button')
-            buttonRefresh.classList.add('button-refresh')
-            buttonRefresh.textContent = 'Refresh';
+            buttonRefresh.classList.add(`button-${type}`)
+            buttonRefresh.textContent = type == 'refresh' ? 'Refresh' :'Click to retry';
             buttonRefresh.addEventListener('click',()=>{
                 getRandomRepo(language);
             })
